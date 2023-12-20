@@ -1,0 +1,8 @@
+<%= turbo_frame_tag "post-form" do %>
+  <%= form_with model: @post do |f| %>
+    <div class="field">
+      <%= f.text_field :body %>
+      <%= f.submit :Send %>
+    </div>
+  <% end %>
+<% end %>
